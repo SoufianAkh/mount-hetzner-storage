@@ -14,11 +14,11 @@ Mount storage box
 ------------------------------------
 (this command will prompt for a password, you need to do this for the first time)
   
-    sshfs YOUR-USER@YOUR-USER.your-storagebox.de:/YUOR-FOLDER  /backup
+    sshfs YOUR-USER@YOUR-USER.your-storagebox.de:/YOUR-FOLDER  /backup
     
 (In one line)
 
-    echo 'YOUR-PASSWORD' | sshfs YOUR-USER@YOUR-USER.your-storagebox.de:/YUOR-FOLDER  /backup -o password_stdin,allow_other
+    echo 'YOUR-PASSWORD' | sshfs YOUR-USER@YOUR-USER.your-storagebox.de:/YOUR-FOLDER  /backup -o password_stdin,allow_other
   
 (add `-o StrictHostKeyChecking=no -o UserKnownHostsFile=/dev/null` if it times out)
 
