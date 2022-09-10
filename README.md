@@ -20,6 +20,8 @@ Mount storage box
 
     echo 'YOUR-PASSWORD' | sshfs YOUR-USER@YOUR-USER.your-storagebox.de:/YUOR-FOLDER  /backup -o password_stdin,allow_other
   
+(add `-o StrictHostKeyChecking=no -o UserKnownHostsFile=/dev/null` if it times out)
+
 Check that your storage is mounted with:
 
     df -hT
